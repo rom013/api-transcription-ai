@@ -38,12 +38,12 @@ export async function createTranscriptionRoute(app: FastifyInstance) {
 
     const transcription = response.text
 
-    const updateTranscription = prisma.video.update({
+    const updateTranscription = await prisma.video.update({
       where:{
         id: videoId,
       },
       data: {
-        transcription: transcription
+        transcription
       }
     })
 
