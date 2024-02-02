@@ -8,6 +8,9 @@
   },
   "author": "rom013",
   "license": "ISC",
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
   "devDependencies": {
     "@types/node": "^20.11.10",
     "tsx": "^4.7.0",
@@ -17,6 +20,7 @@
     "@fastify/cors": "^9.0.1",
     "@fastify/multipart": "^8.1.0",
     "@prisma/client": "^5.9.0",
+    "ai": "^2.2.33",
     "dotenv": "^16.4.1",
     "fastify": "^4.26.0",
     "openai": "^4.26.0",
